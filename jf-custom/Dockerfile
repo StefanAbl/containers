@@ -3,6 +3,7 @@ FROM jellyfin/jellyfin:10.8.13
 ENV jfroot="/jellyfin/jellyfin-web"
 
 COPY images /images
+
 RUN sed -i "s~Jellyfin~Stream~g" $jfroot/manifest.json &&\
     sed -i "s~Jellyfin~Stream~g" $jfroot/index.html &&\
     cp $jfroot/main.*.bundle.js ~/main.bundle.js.bak &&\
