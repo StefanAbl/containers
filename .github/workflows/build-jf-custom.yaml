@@ -1,0 +1,14 @@
+name: Release Jellyfin Custom on Merge
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "jf-custom/**"
+jobs:
+  build-images:
+    uses: stefanabl/containers/.github/workflows/step-build.yaml@main
+    secrets: inherit
+    with:
+      path: jf-custom
+      build-args: 'URL'
+
