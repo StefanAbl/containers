@@ -1,12 +1,23 @@
 name: Release Jellyfin Custom on Merge
 on:
+  workflow_dispatch:
   push:
     branches: ["main"]
     paths:
       - "jf-custom/**"
 jobs:
+  get-version:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Extract Version
+      id: extract
+      run: |
+        version=$(curl -s https://raw.githubusercontent.com/StefanAbl/containers/main/jf-custom/Dockerfile | grep -oP '\d+\.\d+\.\d+')
+        echo "::set-output name=version::${version}"
   build-images:
+    needs: get-version
     uses: stefanabl/containers/.github/workflows/step-build.yaml@main
     secrets: inherit
     with:
       path: jf-custom
+      tag: ${{ needs.get-version.outputs.version }}
