@@ -34,7 +34,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4.6.0
         with:
-          images: ${{ env.REGISTRY }}/${{ env.GITHUB_REPOSITORY_OWNER }}/${{ inputs.path }}
+          images: ${{ env.REGISTRY }}/${{ github.repository_owner }}/${{ inputs.path }}
           tags: |
             type=raw,value=latest
             type=sha
