@@ -10,5 +10,3 @@ jobs:
     secrets: inherit
     with:
       path: jf-custom
-      build-args: 'URL'
-
