@@ -1,0 +1,18 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+      "config:base",
+      ":disableRateLimiting"
+    ],
+    "packageRules": [
+      {
+        "matchUpdateTypes": ["patch", "minor"],
+        "matchCurrentVersion": "!/^0/",
+        "matchDatasources": ["docker"],
+        "ignoreTests": true,
+        "matchPackageNames": ["jellyfin/jellyfin"],
+        "automerge": true
+      }
+    ]
+  
+  }
