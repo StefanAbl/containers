@@ -13,7 +13,8 @@ jobs:
       id: extract
       run: |
         version=$(curl -s https://raw.githubusercontent.com/StefanAbl/containers/main/jf-custom/Dockerfile | grep -oP '\d+\.\d+\.\d+')
-        echo "::set-output name=version::${version}"
+        echo "Version: $version"
+        echo "version=${version}" >> $GITHUB_OUTPUT
   build-images:
     needs: get-version
     uses: stefanabl/containers/.github/workflows/step-build.yaml@main
