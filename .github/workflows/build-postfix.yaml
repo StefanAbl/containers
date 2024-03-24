@@ -3,10 +3,10 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "backup-mx/**"
+      - "postfix/**"
 jobs:
   build-images:
     uses: stefanabl/containers/.github/workflows/step-build.yaml@main
     secrets: inherit
     with:
-      path: backup-mx
+      path: postfix
