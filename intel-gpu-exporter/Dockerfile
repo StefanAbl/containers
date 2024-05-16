@@ -33,7 +33,7 @@ RUN \
         /var/cache/apt/* \
         /var/tmp/*
 
-ENTRYPOINT ["/usr/bin/catatonit", "--", "/usr/local/bin/python"]
+ENTRYPOINT ["/usr/bin/catatonit", "--", "/usr/bin/python3"]
 CMD ["/app/intel-gpu-exporter.py"]
 
 LABEL \
