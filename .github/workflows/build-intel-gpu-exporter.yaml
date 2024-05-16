@@ -1,0 +1,12 @@
+name: Release intel-gpu-exporter on Merge
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "intel-gpu-exporter/**"
+jobs:
+  build-images:
+    uses: stefanabl/containers/.github/workflows/step-build.yaml@main
+    secrets: inherit
+    with:
+      path: intel-gpu-exporter
