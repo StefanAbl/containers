@@ -119,7 +119,7 @@ def update(data):
 
 
 if __name__ == "__main__":
-    if os.getenv("DEBUG", False):
+    if os.getenv("DEBUG", True):
         debug = logging.DEBUG
     else:
         debug = logging.INFO
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     logging.info("Started " + cmd)
     output = ""
 
-    if os.getenv("IS_DOCKER", False):
+    if os.getenv("IS_DOCKER", True):
         for line in process.stdout:
             line = line.decode("utf-8").strip()
             output += line
