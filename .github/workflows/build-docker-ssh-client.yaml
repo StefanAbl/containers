@@ -1,0 +1,12 @@
+name: Release docker-ssh-client on Merge
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "docker-ssh-client/**"
+jobs:
+  build-images:
+    uses: stefanabl/containers/.github/workflows/step-build.yaml@main
+    secrets: inherit
+    with:
+      path: docker-ssh-client
