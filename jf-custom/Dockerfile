@@ -1,4 +1,4 @@
-FROM jellyfin/jellyfin:10.9.7
+FROM jellyfin/jellyfin:10.9.8
 
 ENV jfroot="/jellyfin/jellyfin-web"
 
