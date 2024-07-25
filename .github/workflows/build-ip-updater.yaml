@@ -1,0 +1,12 @@
+name: Release docker-ssh-client on Merge
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "ip-updater/**"
+jobs:
+  build-images:
+    uses: stefanabl/containers/.github/workflows/step-build.yaml@main
+    secrets: inherit
+    with:
+      path: ip-updater
