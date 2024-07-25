@@ -1,6 +1,8 @@
 #!/bin/bash
-dynv6="/usr/bin/dynv6.sh"
-cf="/usr/bin/cf.sh"
+set -e
+
+dynv6="/dynv6.sh"
+cf="/cf.sh"
 
 date
 #ip4="$(curl -4 https://am.i.mullvad.net)"
