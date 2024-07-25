@@ -5,8 +5,7 @@ dynv6="/dynv6.sh"
 cf="/cf.sh"
 
 date
-#ip4="$(curl -4 https://am.i.mullvad.net)"
-ip4="10.13.2.10"
+ip4="$(curl -4 https://am.i.mullvad.net)"
 echo "ipv4 is $ip4"
 
 # Ensure yq is installed
