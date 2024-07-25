@@ -51,10 +51,10 @@ for cf_zone in $cf_zones; do
   for record in $cf_records; do
     record=${record//\"/}
     echo "Test    $record        $cf_zone"
-    if dig +short @1.1.1.1 "$record.$cf_zone" | grep -iq "$ip4"; then
-      echo "Not updating record $record.$cf_zone"
+    if dig +short @1.1.1.1 "$record" | grep -iq "$ip4"; then
+      echo "Not updating record $record"
     else
-      cf_record_str+="-r $record.$cf_zone "
+      cf_record_str+="-r $record "
     fi
   done
   echo "cf record string: $cf_record_str"
