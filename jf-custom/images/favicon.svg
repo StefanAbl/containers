@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="88"
-   height="88"
-   version="1.1"
-   id="svg115"
-   sodipodi:docname="favicon.svg"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="87.314499"
+   height="86.400002"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="logo-notext.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
-     id="namedview117"
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1.0"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     inkscape:zoom="9.1171875"
-     inkscape:cx="36.08569"
-     inkscape:cy="55.225364"
      inkscape:window-width="2560"
      inkscape:window-height="1376"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="2.6074563"
+     inkscape:cx="56.692564"
+     inkscape:cy="17.910186"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g112"
-     fit-margin-left="1"
-     fit-margin-top="1"
-     fit-margin-right="1"
-     fit-margin-bottom="1" />
+     inkscape:current-layer="svg15" />
   <defs
      id="SvgjsDefs4524">
-    <linearGradient
-       id="linearGradient414">
-      <stop
-         id="stop410"
-         stop-color="#7f00ff"
-         offset="0" />
-      <stop
-         id="stop412"
-         stop-color="#e100ff"
-         offset="1" />
-    </linearGradient>
     <linearGradient
        id="SvgjsLinearGradient4531">
       <stop
@@ -56,23 +58,78 @@
          stop-color="#e100ff"
          offset="1" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SvgjsLinearGradient4531"
+       id="linearGradient31"
+       gradientTransform="scale(1.0052783,0.99474943)"
+       x1="5.7307515"
+       y1="7.7326005"
+       x2="91.68506"
+       y2="7.7326005"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SvgjsLinearGradient4531"
+       id="linearGradient33"
+       gradientTransform="scale(0.9048849,1.1051129)"
+       x1="34.465157"
+       y1="25.998248"
+       x2="73.759784"
+       y2="25.998248"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SvgjsLinearGradient4531"
+       id="linearGradient35"
+       gradientTransform="scale(1.0052783,0.99474943)"
+       x1="5.7307515"
+       y1="7.7326005"
+       x2="91.68506"
+       y2="7.7326005"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SvgjsLinearGradient4531"
+       id="linearGradient37"
+       gradientTransform="scale(1.0052783,0.99474943)"
+       x1="5.7307515"
+       y1="7.7326005"
+       x2="91.68506"
+       y2="7.7326005"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#SvgjsLinearGradient4531"
+       id="linearGradient39"
+       gradientTransform="scale(1.0052783,0.99474943)"
+       x1="5.7307515"
+       y1="7.7326005"
+       x2="91.68506"
+       y2="7.7326005"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      id="SvgjsG4525"
-     fill="url(#SvgjsLinearGradient4531)"
-     transform="matrix(1.0104909,0,0,1.0104909,-5.8214396,-7.7726958)"
-     featurekey="symbolFeature-0">
+     transform="matrix(1.0104909,0,0,1.0104909,-5.8214381,-7.772696)"
+     featurekey="symbolFeature-0"
+     style="fill:url(#linearGradient39)">
     <g
-       id="g112">
+       id="g12"
+       style="fill:url(#linearGradient37)">
       <g
-         id="g110"
-         inkscape:export-filename="/home/stefan/Documents/IT/logos/favicon.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96">
+         id="g10"
+         style="fill:url(#linearGradient35)">
         <path
-           fill="url(#SvgjsLinearGradient4531)"
+           style="fill:url(#linearGradient31)"
            d="m 48.931,7.692 c -28.781,0 -43.17,14.251 -43.17,42.752 0,28.501 14.389,42.751 43.17,42.751 28.825,0 43.238,-14.25 43.238,-42.751 0,-28.501 -14.413,-42.752 -43.238,-42.752 z m 25.221,68.769 c -5.288,5.497 -13.694,8.246 -25.221,8.246 -11.436,0 -19.81,-2.748 -25.12,-8.246 -5.31,-5.496 -7.965,-14.169 -7.965,-26.017 0,-11.849 2.655,-20.522 7.965,-26.018 5.31,-5.497 13.684,-8.246 25.12,-8.246 11.527,0 19.933,2.749 25.221,8.246 5.287,5.496 7.931,14.169 7.931,26.018 0,11.848 -2.644,20.521 -7.931,26.017 z"
-           id="path106" />
+           id="path6"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:url(#linearGradient33)"
+           d="M 64.771,46.535 43.67,30.258 c -1.66,-1.28 -3.968,-1.754 -6.109,-1.424 -0.299,-0.063 -0.604,-0.103 -0.917,-0.103 -3.014,0 -5.457,3.03 -5.457,6.768 v 29.889 c 0,3.738 2.443,6.768 5.457,6.768 0.313,0 0.618,-0.04 0.917,-0.103 2.141,0.33 4.449,-0.144 6.109,-1.424 L 64.772,54.352 c 1.393,-1.075 2.043,-2.501 1.966,-3.909 0.077,-1.406 -0.573,-2.833 -1.967,-3.908 z"
+           id="path8"
+           inkscape:connector-curvature="0" />
       </g>
     </g>
   </g>
