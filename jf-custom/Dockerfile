@@ -1,4 +1,4 @@
-FROM jellyfin/jellyfin:10.9.10
+FROM jellyfin/jellyfin:10.9.11
 
 
 COPY images /images
