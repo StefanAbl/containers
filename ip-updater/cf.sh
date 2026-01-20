@@ -40,7 +40,7 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 
 # get the zone id for the requested zone
 zoneid=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones?name=$zone&status=active" \
-    -H "Authorization: Bearer $token" \
+    -H "Authorization: Bearer $CF_TOKEN" \
     -H "Content-Type: application/json" | jq -r '{"result"}[] | .[0] | .id')
 
 echo "Zoneid for $zone is $zoneid"
@@ -56,26 +56,26 @@ for dnsrecord in "${records[@]}"; do
     if [ -n "$ipv4" ]; then
         # get the dns record id
         dnsrecordid=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/$zoneid/dns_records?type=A&name=$dnsrecord" \
-            -H "Authorization: Bearer $token" \
+            -H "Authorization: Bearer $CF_TOKEN" \
             -H "Content-Type: application/json" | jq -r '{"result"}[] | .[0] | .id')
 
-        echo "DNSrecordid for $dnsrecord is $dnsrecordid"
+        echo "DNS record id for $dnsrecord is $dnsrecordid"
         # update the record
         curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$zoneid/dns_records/$dnsrecordid" \
-            -H "Authorization: Bearer $token" \
+            -H "Authorization: Bearer $CF_TOKEN" \
             -H "Content-Type: application/json" \
             --data "{\"type\":\"A\",\"name\":\"$dnsrecord\",\"content\":\"$ipv4\",\"ttl\":1,\"proxied\":false}" | jq
     fi
     if [ -n "$ipv6" ]; then
         # get the dns record id
         dnsrecordid=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/$zoneid/dns_records?type=AAAA&name=$dnsrecord" \
-            -H "Authorization: Bearer $token" \
+            -H "Authorization: Bearer $CF_TOKEN" \
             -H "Content-Type: application/json" | jq -r '{"result"}[] | .[0] | .id')
 
-        echo "DNSrecordid for $dnsrecord is $dnsrecordid"
+        echo "DNS record id for $dnsrecord is $dnsrecordid"
         # update the record
         curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$zoneid/dns_records/$dnsrecordid" \
-            -H "Authorization: Bearer $token" \
+            -H "Authorization: Bearer $CF_TOKEN" \
             -H "Content-Type: application/json" \
             --data "{\"type\":\"AAAA\",\"name\":\"$dnsrecord\",\"content\":\"$ipv6\",\"ttl\":1,\"proxied\":false}" | jq
     fi
