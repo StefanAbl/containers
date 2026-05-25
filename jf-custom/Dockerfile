@@ -1,4 +1,4 @@
-FROM jellyfin/jellyfin:10.11.9
+FROM jellyfin/jellyfin:10.11.10
 
 
 RUN apt update && apt install -y sqlite3
