@@ -5,7 +5,7 @@
 # at /etc/cron-config (see entrypoint.sh). This image only needs rebuilding
 # if the cron-runner mechanics themselves change.
 
-FROM alpine:3.20
+FROM alpine:3.24
 
 RUN apk add --no-cache dcron
 
