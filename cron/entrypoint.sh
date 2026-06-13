@@ -36,4 +36,14 @@ cat "${TARGET_CRONTAB}"
 echo "entrypoint: scripts in ${SCRIPTS_DIR}:"
 ls -l "${SCRIPTS_DIR}" || true
 
-exec crond -f -l 8
+# Run crond as a child process rather than `exec`-ing into it. If crond
+# becomes PID 1 it's also the session leader, and its startup setpgid()
+# call then fails with "setpgid: Operation not permitted" (EPERM - you
+# can't change a session leader's process group). Keeping this script as
+# PID 1 avoids that; the trap forwards termination signals to crond so
+# `kubectl delete` / rolling updates still stop it promptly.
+trap 'kill -TERM "$child" 2>/dev/null' TERM INT
+
+crond -f -l 8 &
+child=$!
+wait "$child"
