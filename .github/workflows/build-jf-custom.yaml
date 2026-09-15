@@ -16,7 +16,7 @@ jobs:
     - name: Extract Version
       id: extract
       run: |
-        version=$(grep 'FROM jellyfin/jellyfin' jf-custom/Dockerfile | grep -oP '\d+\.\d+\.\d+')
+        version=$(grep 'FROM jellyfin/jellyfin' jf-custom/Dockerfile | grep -oP '\d+\.\d+(\.\d+)?')
         echo "Version: $version"
         echo "version=$version" >> $GITHUB_OUTPUT
   build-images:
